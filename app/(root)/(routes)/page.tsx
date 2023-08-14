@@ -1,7 +1,6 @@
 "use client";
 
 import {useEffect} from "react"
-import {Modal} from "@/components/ui/modal"
 import { userStoreModal } from "@/hooks/use-store-modal";
 const SetupPage=()=>{
     const onOpen=userStoreModal((state)=>state.onOpen)
@@ -12,13 +11,6 @@ const SetupPage=()=>{
         onOpen();
        }
     },[isOpen,onOpen]);
-    return(
-        <div className="p-4">
-            {/* <Modal title="Test" description="Test desc" isOpen onClose={()=>{}} >
-                 Children
-            </Modal> */}
-            RootPAge
-        </div>
-    )
+    return null
 }
 export default SetupPage
